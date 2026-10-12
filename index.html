@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palmview Estate Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input type="radio" name="nav" id="t1" checked>
+<input type="radio" name="nav" id="t2">
+<input type="radio" name="nav" id="t3">
+<input type="radio" name="nav" id="t4">
+<input type="radio" name="nav" id="t5">
+
+<div class="app">
+  <aside class="side">
+    <div class="brand"><span class="mark">P</span><div><strong>Palmview Estate</strong><small>Management office</small></div></div>
+    <nav>
+      <label for="t1">Overview</label>
+      <label for="t2">Residents</label>
+      <label for="t3">Dues &amp; payments</label>
+      <label for="t4">Maintenance</label>
+      <label for="t5">Visitors</label>
+    </nav>
+    <p class="side-note">48 units · 4 blocks<br>Manager on duty: Esi Boateng</p>
+  </aside>
+
+  <main>
+    <!-- OVERVIEW -->
+    <section class="page p1">
+      <header class="top"><h1>Good morning, Esi</h1><p>Here is where the estate stands today.</p></header>
+      <div class="stats">
+        <div class="stat"><span>Occupied units</span><b>44 of 48</b></div>
+        <div class="stat"><span>Dues collected this month</span><b>GH₵ 61,400</b></div>
+        <div class="stat warn"><span>Overdue accounts</span><b>7</b></div>
+        <div class="stat"><span>Open repair requests</span><b>9</b></div>
+      </div>
+      <div class="cols">
+        <div class="panel">
+          <h2>Collection progress</h2>
+          <div class="bar"><i style="width:78%"></i></div>
+          <p class="muted">78% of GH₵ 78,700 billed for October has been paid.</p>
+          <h2>Needs attention</h2>
+          <ul class="list">
+            <li><span class="dot red"></span>Block C water pump failed — engineer booked for 2:00 pm</li>
+            <li><span class="dot amber"></span>Street light near Gate 2 flickering for 3 days</li>
+            <li><span class="dot amber"></span>Security contract renewal due 31 October</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Notice board</h2>
+          <article class="note"><h3>Waste collection moves to Tuesday</h3><p>From 20 October, pickup is every Tuesday and Friday.</p></article>
+          <article class="note"><h3>Residents' meeting</h3><p>Saturday 24 October, 5:00 pm at the clubhouse.</p></article>
+          <article class="note"><h3>Gate 3 closed for resurfacing</h3><p>Use Gate 1 or Gate 2 until Thursday.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESIDENTS -->
+    <section class="page p2">
+      <header class="top"><h1>Residents</h1><p>Everyone currently registered in the estate.</p></header>
+      <div class="panel flush">
+        <div class="scroll"><table>
+          <thead><tr><th>Name</th><th>Unit</th><th>Type</th><th>Phone</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Kwame Mensah</td><td>A-04</td><td>Owner</td><td>024 411 2093</td><td><span class="tag ok">Active</span></td></tr>
+            <tr><td>Abena Owusu</td><td>A-11</td><td>Tenant</td><td>055 302 7781</td><td><span class="tag ok">Active</span></td></tr>
+            <tr><td>Yaw Darko</td><td>B-02</td><td>Owner</td><td>020 884 1566</td><td><span class="tag ok">Active</span></td></tr>
+            <tr><td>Efua Quaye</td><td>B-09</td><td>Tenant</td><td>054 719 0342</td><td><span class="tag late">Overdue</span></td></tr>
+            <tr><td>Nana Asante</td><td>C-06</td><td>Owner</td><td>027 530 6618</td><td><span class="tag ok">Active</span></td></tr>
+            <tr><td>Selasi Agbeko</td><td>C-14</td><td>Tenant</td><td>050 227 9035</td><td><span class="tag late">Overdue</span></td></tr>
+            <tr><td>Kofi Amponsah</td><td>D-03</td><td>Owner</td><td>024 906 4410</td><td><span class="tag ok">Active</span></td></tr>
+            <tr><td>Adwoa Frimpong</td><td>D-08</td><td>Tenant</td><td>055 148 3279</td><td><span class="tag away">Away</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+
+    <!-- PAYMENTS -->
+    <section class="page p3">
+      <header class="top"><h1>Dues &amp; payments</h1><p>October service charge: GH₵ 1,640 per unit.</p></header>
+      <div class="stats three">
+        <div class="stat"><span>Billed</span><b>GH₵ 78,700</b></div>
+        <div class="stat"><span>Received</span><b>GH₵ 61,400</b></div>
+        <div class="stat warn"><span>Outstanding</span><b>GH₵ 17,300</b></div>
+      </div>
+      <div class="panel flush">
+        <div class="scroll"><table>
+          <thead><tr><th>Date</th><th>Resident</th><th>Unit</th><th>Method</th><th class="r">Amount</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>12 Oct</td><td>Kwame Mensah</td><td>A-04</td><td>Mobile money</td><td class="r">GH₵ 1,640</td><td><span class="tag ok">Paid</span></td></tr>
+            <tr><td>11 Oct</td><td>Yaw Darko</td><td>B-02</td><td>Bank transfer</td><td class="r">GH₵ 1,640</td><td><span class="tag ok">Paid</span></td></tr>
+            <tr><td>10 Oct</td><td>Abena Owusu</td><td>A-11</td><td>Mobile money</td><td class="r">GH₵ 820</td><td><span class="tag part">Part paid</span></td></tr>
+            <tr><td>09 Oct</td><td>Nana Asante</td><td>C-06</td><td>Cash</td><td class="r">GH₵ 1,640</td><td><span class="tag ok">Paid</span></td></tr>
+            <tr><td>—</td><td>Efua Quaye</td><td>B-09</td><td>—</td><td class="r">GH₵ 0</td><td><span class="tag late">Overdue</span></td></tr>
+            <tr><td>—</td><td>Selasi Agbeko</td><td>C-14</td><td>—</td><td class="r">GH₵ 0</td><td><span class="tag late">Overdue</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+
+    <!-- MAINTENANCE -->
+    <section class="page p4">
+      <header class="top"><h1>Maintenance</h1><p>Repair requests, grouped by progress.</p></header>
+      <div class="board">
+        <div class="lane"><h2>Reported <span>3</span></h2>
+          <article class="card"><b>Broken gate intercom</b><p>Block A · Reported by A-11</p><span class="tag late">Urgent</span></article>
+          <article class="card"><b>Leaking tap in clubhouse</b><p>Common area</p><span class="tag part">Normal</span></article>
+          <article class="card"><b>Blocked drain</b><p>Block D · D-03</p><span class="tag part">Normal</span></article>
+        </div>
+        <div class="lane"><h2>In progress <span>2</span></h2>
+          <article class="card"><b>Water pump failure</b><p>Block C · Engineer arrives 2:00 pm</p><span class="tag late">Urgent</span></article>
+          <article class="card"><b>Street light, Gate 2</b><p>Electrician assigned</p><span class="tag part">Normal</span></article>
+        </div>
+        <div class="lane"><h2>Done <span>2</span></h2>
+          <article class="card"><b>Repaint stairwell</b><p>Block B · Finished 8 Oct</p><span class="tag ok">Closed</span></article>
+          <article class="card"><b>Replace perimeter lamp</b><p>North wall · Finished 5 Oct</p><span class="tag ok">Closed</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISITORS -->
+    <section class="page p5">
+      <header class="top"><h1>Visitors</h1><p>Today's gate log.</p></header>
+      <div class="panel flush">
+        <div class="scroll"><table>
+          <thead><tr><th>Time in</th><th>Visitor</th><th>Visiting</th><th>Purpose</th><th>Gate</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>07:45</td><td>Joseph Tetteh</td><td>A-04</td><td>Delivery</td><td>1</td><td><span class="tag away">Left 07:58</span></td></tr>
+            <tr><td>09:10</td><td>Mercy Ofori</td><td>B-02</td><td>Family visit</td><td>1</td><td><span class="tag ok">On site</span></td></tr>
+            <tr><td>10:30</td><td>AquaFix Plumbing</td><td>Block C</td><td>Contractor</td><td>2</td><td><span class="tag ok">On site</span></td></tr>
+            <tr><td>11:05</td><td>Daniel Addo</td><td>D-08</td><td>Courier</td><td>1</td><td><span class="tag away">Left 11:12</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
